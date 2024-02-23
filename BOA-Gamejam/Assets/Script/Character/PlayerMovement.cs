@@ -6,25 +6,24 @@ using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public static float moveSpeed = 5f;
+    public float moveSpeed = 5f;
 
     public Rigidbody2D rigidBody;
     public Animator animator;
     
-    Vector2 movement;
-
     [Header("Blink Settings")] [SerializeField]
     public float blinkDistance;
-    private float blinkTimer;
     public float blinkTime;
-    bool facingRight;
-    bool facingUp;
     public bool canBlink = true;
+    private float _blinkTimer;
+    private bool _facingRight;
+    private bool _facingUp;
+    private Vector2 _movement;
 
-    void Blink()
+    private void Blink()
     {
         Vector3 blink;
-        if (facingRight)
+        if (_facingRight)
         {
             blink = new Vector3(blinkDistance, 0, 0);
         }
@@ -32,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         {
             blink = new Vector3(-blinkDistance, 0, 0);
         }
-        if (facingUp)
+        if (_facingUp)
         {
             blink = new Vector3(0, blinkDistance, 0);
         }
@@ -40,19 +39,19 @@ public class PlayerMovement : MonoBehaviour
         {
             blink = new Vector3(0, -blinkDistance, 0);
         }
-        if (facingUp && facingRight)
+        if (_facingUp && _facingRight)
         {
             blink = new Vector3(blinkDistance, blinkDistance, 0);
         }
-        else if(facingUp && !facingRight)
+        else if(_facingUp && !_facingRight)
         {
             blink = new Vector3(-blinkDistance, blinkDistance, 0);
         } 
-        else if(!facingUp && facingRight)
+        else if(!_facingUp && _facingRight)
         {
             blink = new Vector3(blinkDistance, -blinkDistance, 0);
         }
-        else if(!facingUp && !facingRight)
+        else if(!_facingUp && !_facingRight)
         {
             blink = new Vector3(-blinkDistance, -blinkDistance, 0);
         }
@@ -61,17 +60,16 @@ public class PlayerMovement : MonoBehaviour
     }
     
     
-    void Update()
+    private void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        _movement.x = Input.GetAxisRaw("Horizontal");
+        _movement.y = Input.GetAxisRaw("Vertical");
         
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+        animator.SetFloat("Horizontal", _movement.x);
+        animator.SetFloat("Vertical", _movement.y);
+        animator.SetFloat("Speed", _movement.sqrMagnitude);
 
         // Add blink animator.
-        /*
         if (Input.GetKeyDown(KeyCode.Space) && canBlink)
         {
             animator.SetBool("Blink", true);
@@ -81,36 +79,35 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("Blink", false);
         }
-        */
         if (!canBlink)
         {
-            blinkTimer += Time.deltaTime;
+            _blinkTimer += Time.deltaTime;
         }
-        if (blinkTimer > blinkTime)
+        if (_blinkTimer > blinkTime)
         {
             canBlink = true;
-            blinkTimer = 0;
+            _blinkTimer = 0;
         }
-        if (movement.x >= 1)
+        if (_movement.x >= 1)
         {
-            facingRight = true;
-        }
-        else
-        {
-            facingRight = false;
-        }
-        if (movement.y >= 1)
-        {
-            facingUp = true;
+            _facingRight = true;
         }
         else
         {
-            facingUp = false;
+            _facingRight = false;
+        }
+        if (_movement.y >= 1)
+        {
+            _facingUp = true;
+        }
+        else
+        {
+            _facingUp = false;
         }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
-        rigidBody.MovePosition(rigidBody.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
+        rigidBody.MovePosition(rigidBody.position + _movement.normalized * moveSpeed * Time.fixedDeltaTime);
     }
 }

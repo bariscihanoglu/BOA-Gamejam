@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
-    public GameObject player;
-
     public int killCnt;
     public int eggCnt;
     public float health;
@@ -23,13 +21,14 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
+        health = maxHealth;
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
         _playerMovement = GetComponent<PlayerMovement>();
+        _healthManager = GetComponent<HealthManager>();
         _healthManager.SetMaxHealth((int)maxHealth);
         _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
-        health = maxHealth;
     }
 
     private void DealDamage(float damage)
@@ -54,11 +53,11 @@ public class PlayerStats : MonoBehaviour
     
     private void CheckOverheal()
     {
-        _healthManager.SetHealth((int)health);
         if (health > maxHealth)
         {
             health = maxHealth;
         }
+        _healthManager.SetHealth((int)health);
     }
 
     private void CheckDeath()
@@ -73,7 +72,7 @@ public class PlayerStats : MonoBehaviour
             Shooting.isDead = true;
             // DEATH ANIMATION WILL CALL THE RESTART
             // RestartLevel();
-            _healthManager.SetHealth((int)health);
+            _healthManager.SetHealth(0);
         }
         else
         {

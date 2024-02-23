@@ -51,6 +51,7 @@ public class EnemyStats : MonoBehaviour
         if (health <= 0)
         {
             _enemyAI.speed = 0;
+            //boris sikmiş düzeltilecek
             if (isAlive)
             {
                 _audioManager.PlaySFX(_audioManager.enemyDeath);

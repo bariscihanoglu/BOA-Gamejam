@@ -1142,6 +1142,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1997324330}
     - target: {fileID: 5677431469234518670, guid: f8e2d6b6ae6045043a8d0e7d0aa08eec, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1309103884}
+    - target: {fileID: 5677431469234518670, guid: f8e2d6b6ae6045043a8d0e7d0aa08eec, type: 3}
       propertyPath: maxHealth
       value: 100
       objectReference: {fileID: 0}
@@ -2710,6 +2714,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1309103884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5637976885347237185, guid: f8e2d6b6ae6045043a8d0e7d0aa08eec, type: 3}
+  m_PrefabInstance: {fileID: 533012321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1312723839
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2799,7 +2808,7 @@ Transform:
   m_GameObject: {fileID: 1462198802}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8, y: 3.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32515,7 +32524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 171, y: -58}
+  m_AnchoredPosition: {x: -6.2800293, y: 36.700012}
   m_SizeDelta: {x: 164.51001, y: 14.9900055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997324330

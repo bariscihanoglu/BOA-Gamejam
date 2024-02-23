@@ -238,11 +238,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945341198b798c3418d15f9782841cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 5637976885347237185}
   killCnt: 0
   eggCnt: 0
+  health: 0
   maxHealth: 100
   damageTaken: 10
-  isAlive: 1
 --- !u!114 &5763933633287810962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +261,7 @@ MonoBehaviour:
   animator: {fileID: 1224064875917337071}
   blinkDistance: 4
   blinkTime: 2
+  canBlink: 1
 --- !u!50 &8189916014714030148
 Rigidbody2D:
   serializedVersion: 4
