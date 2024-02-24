@@ -13,6 +13,8 @@ public class CollectSystem : MonoBehaviour
     private Animator anim;
     private PlayerStats playerStats;
 
+    private bool cracked = false;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -23,7 +25,11 @@ public class CollectSystem : MonoBehaviour
     {
         emptyChance = Random.Range(0.0f, 1.0f);
         anim.SetTrigger("Oppen");
-        playerStats.eggCnt++;
+        if(!cracked)
+        {
+            playerStats.eggCnt++;
+            cracked = true;
+        }
     }
 
     private void OnMouseUp()
