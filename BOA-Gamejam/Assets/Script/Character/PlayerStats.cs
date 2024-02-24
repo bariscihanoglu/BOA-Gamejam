@@ -76,7 +76,7 @@ public class PlayerStats : MonoBehaviour
             _playerMovement.canBlink = false;
             _playerMovement.blinkTime = 10;
             _animator.SetTrigger("death");
-            _audioManager.PlaySFX(_audioManager.characterDeathOut);
+            _audioManager.PlaySFX(_audioManager.characterDeathIn);
             Shooting.isDead = true;
             // DEATH ANIMATION WILL CALL THE RESTART
             // RestartLevel();

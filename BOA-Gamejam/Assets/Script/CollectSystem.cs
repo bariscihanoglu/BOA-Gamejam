@@ -17,7 +17,6 @@ public class CollectSystem : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
-        this.player = GameObject.FindWithTag("Player");
     }
 
     private void OnMouseDown()
@@ -52,8 +51,7 @@ public class CollectSystem : MonoBehaviour
         else
         {
             anim.SetBool("isEmpty", false);
-            player.GetComponent<PlayerStats>().HealCharacter(healAmount);
-
+            playerStats.HealCharacter(healAmount);
         }
         Destroy(gameObject);
     }

@@ -18,20 +18,19 @@ public class AudioManager : MonoBehaviour
     public AudioClip characterDeathOut;
     public AudioClip enemyDeath;
 
-    public static AudioManager instance;
+    private void Awake()
+    {
+        //if (instanceObj == null)
+        //{
+        //    instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
+    }
 
-    //private void Awake()
-    //{
-    //    if(instance == null)
-    //    {
-    //        instance = this;
-    //        DontDestroyOnLoad(gameObject);
-    //    }
-    //    else
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
     private void Start()
     {
         musicSource.clip = music30s;

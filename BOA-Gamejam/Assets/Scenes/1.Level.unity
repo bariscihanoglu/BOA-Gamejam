@@ -31663,6 +31663,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CursorManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3636572473566693279, guid: 8a6c40bfe710373468a62476f3f3e05b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4850441701527194840, guid: 8a6c40bfe710373468a62476f3f3e05b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -32556,14 +32560,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 9056721360868245561, guid: a666efe133d9ea84b9a484a593b723b7, type: 3}
-      propertyPath: music30s
-      value: 
-      objectReference: {fileID: 8300000, guid: c1e0ee86f1e10d646a2da1b504a8da59, type: 3}
-    - target: {fileID: 9056721360868245561, guid: a666efe133d9ea84b9a484a593b723b7, type: 3}
-      propertyPath: characterDeathOut
-      value: 
-      objectReference: {fileID: 8300000, guid: 8e1a8996029acfd4dbf1d9fdb0c5c1db, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

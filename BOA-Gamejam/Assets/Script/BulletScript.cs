@@ -35,7 +35,7 @@ public class BulletScript : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
             animator.SetTrigger("Hit");
-            
+            rb.velocity = new Vector2(0, 0).normalized * 0;
         }
         // for further usage: if the enemy sends a projectile, take this block of code to enemy and destroy projectile on hit
         //Destroy(gameObject);

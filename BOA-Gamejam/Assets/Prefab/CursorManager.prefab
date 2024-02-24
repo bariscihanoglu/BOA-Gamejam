@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4850441701527194840
 Transform:
   m_ObjectHideFlags: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
     - {fileID: 2800000, guid: 0a50378a9087cfa49a3f7da38eb64e27, type: 3}
     - {fileID: 2800000, guid: ba66d04b4d433454293289aa0f33af5d, type: 3}
     frameRate: 0.1
-    offset: {x: 114, y: 114}
+    offset: {x: 64, y: 64}
   - cursorType: 1
     textureArray:
     - {fileID: 2800000, guid: 308496b346048094cb620f8de51dbd07, type: 3}
