@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8495704820262873977}
   - component: {fileID: 743581447433917980}
   - component: {fileID: 4652185450757657871}
+  - component: {fileID: 6838822780962626828}
   - component: {fileID: 7073924090220946516}
   - component: {fileID: 3067790430298770836}
-  - component: {fileID: 6838822780962626828}
   m_Layer: 7
   m_Name: Cock
   m_TagString: Enemy
@@ -131,6 +131,23 @@ MonoBehaviour:
     m_Bits: 64
   isExcape: 0
   dir: {x: 0, y: 0, z: 0}
+--- !u!114 &6838822780962626828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7841995507070377959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85e29d1520c11545ace56fed16666b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 30
+  damageTaken: 15
+  isAlive: 1
+  assignedSpeed: 0
 --- !u!50 &7073924090220946516
 Rigidbody2D:
   serializedVersion: 4
@@ -193,21 +210,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.8125
---- !u!114 &6838822780962626828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7841995507070377959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85e29d1520c11545ace56fed16666b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 743581447433917980}
-  player: {fileID: 7841995507070377959}
-  health: 0
-  maxHealth: 30
-  damageTaken: 15
-  isAlive: 1

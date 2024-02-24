@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorType: 1
-  player: {fileID: 5637976885347237185, guid: f8e2d6b6ae6045043a8d0e7d0aa08eec, type: 3}
+  healAmount: 50
 --- !u!58 &2787360331939292727
 CircleCollider2D:
   m_ObjectHideFlags: 0

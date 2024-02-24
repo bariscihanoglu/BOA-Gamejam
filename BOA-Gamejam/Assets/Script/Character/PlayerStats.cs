@@ -16,6 +16,9 @@ public class PlayerStats : MonoBehaviour
     private Animator _animator;
     private BoxCollider2D _boxCollider2D;
     private PlayerMovement _playerMovement;
+
+
+    private GameObject _audioManagerObject;
     private AudioManager _audioManager;
     private HealthManager _healthManager;
 
@@ -28,7 +31,12 @@ public class PlayerStats : MonoBehaviour
         _playerMovement = GetComponent<PlayerMovement>();
         _healthManager = GetComponent<HealthManager>();
         _healthManager.SetMaxHealth((int)maxHealth);
-        _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+
+        _audioManagerObject = GameObject.FindGameObjectWithTag("Audio");
+        if(_audioManagerObject != null )
+        {
+            _audioManager = _audioManagerObject.GetComponent<AudioManager>();
+        }
     }
 
     private void DealDamage(float damage)

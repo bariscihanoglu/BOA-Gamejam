@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class CollectSystem : MonoBehaviour
 {
+
     [SerializeField] private CursorManager.CursorType cursorType;
+    [SerializeField] private int healAmount;
+    
+
     bool Pressed = false;
 
     private GameObject player;
@@ -61,7 +65,7 @@ public class CollectSystem : MonoBehaviour
         else
         {
             anim.SetBool("isEmpty", false);
-            player.GetComponent<PlayerStats>().HealCharacter(50);
+            player.GetComponent<PlayerStats>().HealCharacter(healAmount);
 
         }
         Destroy(gameObject);

@@ -15,7 +15,9 @@ public class EnemyStats : MonoBehaviour
     private Animator _animator;
     private CircleCollider2D _circleCollider2D;
     private EnemyAI _enemyAI;
+    private GameObject _player;
     private PlayerStats _playerStats;
+    private GameObject _audioManagerObject;
     private AudioManager _audioManager;
     
     private void Start()
@@ -24,8 +26,16 @@ public class EnemyStats : MonoBehaviour
         _animator = GetComponent<Animator>();
         _circleCollider2D = GetComponent<CircleCollider2D>();
         _enemyAI = GetComponent<EnemyAI>();
-        _playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
-        _audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+        _player = GameObject.FindGameObjectWithTag("Player");
+        if (_player != null)
+        {
+            _playerStats = _player.GetComponent<PlayerStats>();
+        }
+        _audioManagerObject = GameObject.FindGameObjectWithTag("Audio");
+        if(_audioManagerObject != null)
+        {
+            _audioManager = _audioManagerObject.GetComponent<AudioManager>();
+        }
         health = maxHealth;
         assignedSpeed = _enemyAI.speed;
     }
