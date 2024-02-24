@@ -7,9 +7,6 @@ public class CollectSystem : MonoBehaviour
 
     [SerializeField] private CursorManager.CursorType cursorType;
     [SerializeField] private int healAmount;
-    
-
-    bool Pressed = false;
 
     private GameObject player;
     private float emptyChance;
@@ -25,7 +22,6 @@ public class CollectSystem : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Pressed = true;
         emptyChance = Random.Range(0.0f, 1.0f);
         anim.SetTrigger("Oppen");
         playerStats.eggCnt++;
@@ -33,7 +29,7 @@ public class CollectSystem : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Pressed = false;
+        // empty
     }
 
     private void OnMouseEnter()
@@ -44,15 +40,6 @@ public class CollectSystem : MonoBehaviour
     private void OnMouseExit()
     {
         CursorManager.Instance.SetActiveCursorType(CursorManager.CursorType.Aim);
-    }
-
-    // Start is called before the first frame update
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     private void DestroyEgg()

@@ -33,10 +33,9 @@ public class BulletScript : MonoBehaviour
     {
         if (collision.gameObject && !collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Enemy"))
         {
-            rb.bodyType = RigidbodyType2D.Static;
             transform.rotation = Quaternion.Euler(0, 0, 0);
             animator.SetTrigger("Hit");
-
+            
         }
         // for further usage: if the enemy sends a projectile, take this block of code to enemy and destroy projectile on hit
         //Destroy(gameObject);
@@ -45,6 +44,5 @@ public class BulletScript : MonoBehaviour
     private void DestroyPlayer()
     {
         Destroy(gameObject);
-        print("Dead");
     }
 }
