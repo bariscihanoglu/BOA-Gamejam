@@ -43,6 +43,7 @@ public class EnemyStats : MonoBehaviour
     private void DealDamage(float damage)
     {
         health -= damage;
+        _enemyAI.speed = 0;
         _animator.Play("HitTree");
         CheckDeath();
     }
@@ -60,7 +61,6 @@ public class EnemyStats : MonoBehaviour
         if (health <= 0)
         {
             _enemyAI.speed = 0;
-            //boris sikmiş düzeltilecek
             if (isAlive)
             {
                 _audioManager.PlaySFX(_audioManager.enemyDeath);

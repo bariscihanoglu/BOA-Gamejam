@@ -39,14 +39,14 @@ public class PlayerMovement : MonoBehaviour
         {
             blink = new Vector3(0, -blinkDistance, 0);
         }
-        if (_facingUp && _facingRight)
+        if(_facingUp && _facingRight)
         {
             blink = new Vector3(blinkDistance, blinkDistance, 0);
         }
         else if(_facingUp && !_facingRight)
         {
             blink = new Vector3(-blinkDistance, blinkDistance, 0);
-        } 
+        }
         else if(!_facingUp && _facingRight)
         {
             blink = new Vector3(blinkDistance, -blinkDistance, 0);
