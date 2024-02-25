@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74242270}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 80774666}
   - component: {fileID: 80774667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   m_Component:
   - component: {fileID: 106952482}
   - component: {fileID: 106952483}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -488,7 +488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 138670723}
   - component: {fileID: 138670724}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -572,7 +572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 151132351}
   - component: {fileID: 151132352}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,6 +698,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -759,6 +763,10 @@ PrefabInstance:
     - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
       propertyPath: m_Name
       value: tree (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -822,6 +830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -842,7 +854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 283017478}
   - component: {fileID: 283017479}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487500543}
   - component: {fileID: 487500544}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1052,6 +1064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1073,7 +1089,7 @@ GameObject:
   - component: {fileID: 559418163}
   - component: {fileID: 559418162}
   - component: {fileID: 559418164}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: cadir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1292,7 +1308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 586733517}
   - component: {fileID: 586733518}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 609088726}
   - component: {fileID: 609088727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1460,7 +1476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 680334152}
   - component: {fileID: 680334153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697039831}
   - component: {fileID: 697039832}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1880,6 +1896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1982,7 +2002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062019535}
   - component: {fileID: 1062019536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2071,7 +2091,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187687488}
   - component: {fileID: 1187687489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2175,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209186098}
   - component: {fileID: 1209186097}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2239,7 +2259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230317043}
   - component: {fileID: 1230317044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2323,7 +2343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278207790}
   - component: {fileID: 1278207791}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2448,6 +2468,10 @@ PrefabInstance:
     - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
       propertyPath: m_Name
       value: tree (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31491,6 +31515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31539,6 +31567,63 @@ Transform:
   - {fileID: 1715957826}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1528483146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7841995507070377959, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_Name
+      value: Cock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.061584
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68077385
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317074319949054479, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 74fba757541c2544f96f55662ed79eb0, type: 3}
 --- !u!1 &1543384563
 GameObject:
   m_ObjectHideFlags: 0
@@ -31549,7 +31634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543384564}
   - component: {fileID: 1543384565}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31633,7 +31718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1595343300}
   - component: {fileID: 1595343301}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31918,6 +32003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31937,7 +32026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1715957826}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DAGS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31990,7 +32079,7 @@ GameObject:
   - component: {fileID: 1758958075}
   - component: {fileID: 1758958074}
   - component: {fileID: 1758958073}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: camp fire_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32096,7 +32185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1955809406}
   - component: {fileID: 1955809407}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32180,7 +32269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2015446225}
   - component: {fileID: 2015446226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32265,7 +32354,7 @@ GameObject:
   - component: {fileID: 2021299038}
   - component: {fileID: 2021299037}
   - component: {fileID: 2021299039}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32295,7 +32384,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.465851, y: -4.6025763, z: -4.8944087}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1462198803}
   - {fileID: 802131672}
@@ -32347,7 +32436,7 @@ EdgeCollider2D:
   - {x: 27.23834, y: -0.12271595}
   - {x: 24.53022, y: 6.430849}
   - {x: 17.95012, y: 13.889534}
-  - {x: 23.810612, y: 20.53863}
+  - {x: 24.04113, y: 20.653887}
   - {x: 17.794476, y: 21.309849}
   - {x: 16.372015, y: 18.769035}
   - {x: 6.0625763, y: 18.58153}
@@ -32378,7 +32467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2062595451}
   - component: {fileID: 2062595452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32462,7 +32551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128671684}
   - component: {fileID: 2128671685}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boulder 3 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32544,9 +32633,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3645035056005658047, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
+    - target: {fileID: 1713007425279598802, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
+      propertyPath: orthographic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3691533900892218408, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
       propertyPath: m_Name
@@ -32556,6 +32645,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_combat
       objectReference: {fileID: 0}
+    - target: {fileID: 5920949039072564060, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 36.700012
+      objectReference: {fileID: 0}
     - target: {fileID: 7071659771963768076, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -32563,6 +32656,10 @@ PrefabInstance:
     - target: {fileID: 7071659771963768076, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503394577398341172, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7976278727772117960, guid: 75c6c5922e8059f4d9ce287eaec519fa, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32664,6 +32761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tree (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4886156308425996973, guid: 94ca6cd8d6c928f41ab9f1e1069005d6, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32737,3 +32838,4 @@ SceneRoots:
   - {fileID: 1600821193}
   - {fileID: 579231900}
   - {fileID: 1484683832}
+  - {fileID: 1528483146}
